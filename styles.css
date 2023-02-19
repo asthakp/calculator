@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  width: 400px;
+  height: 500px;
+  background-color: rgb(67, 66, 66);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@font-face {
+  font-family: CursedUil;
+  src: url(CursedTimerULiL.ttf);
+}
+.screen {
+  width: 90%;
+  height: 2.8rem;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 2.8rem;
+  text-align: right;
+}
+.screen p {
+  padding-top: 3px;
+  font-family: CursedUil;
+}
+
+.buttons {
+  width: 90%;
+  height: 22rem;
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.buttons .btn {
+  font-size: 2rem;
+  border-radius: 20px;
+  border: none;
+}
+.buttons .symbol {
+  font-size: 2.5rem;
+}
+.yellow-btn {
+  background-color: rgb(200, 162, 8);
+  color: white;
+  border: none;
+}
+.span-side {
+  grid-column: 1/3;
+}
+.span-up {
+  grid-column: 3/-1;
+}
+.btn:hover {
+  background-color: rgb(4, 178, 85);
+}
